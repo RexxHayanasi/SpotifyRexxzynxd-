@@ -7,7 +7,7 @@ function searchTracks() {
 
     $('#waitModal').modal('show');
 
-    fetch(`https://spotifyapi.caliphdev.com/api/search/tracks?q=${query}`)
+    fetch(`https://itzpire.com/search/spotify?query=${query}`)
         .then(response => response.json())
         .then(data => {
             const musicGallery = document.getElementById('musicGallery');
